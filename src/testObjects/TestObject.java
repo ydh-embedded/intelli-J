@@ -1,3 +1,5 @@
+package testObjects;
+
 // Diese Klasse ist das Testobjekt.
 public class TestObject {
     public static int sum(int... numbers) {

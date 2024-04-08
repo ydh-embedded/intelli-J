@@ -1,3 +1,5 @@
+package Sum;
+
 public class MethodeSum {
 
     public static void main(String[] args) {

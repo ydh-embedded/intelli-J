@@ -1,6 +1,6 @@
-import static org.junit.jupiter.api.Assertions.*;
+package HelloWorld;
 
-import HelloWorld.HelloWorld;
+import static org.junit.jupiter.api.Assertions.*;
 
 class HelloWorldTest {
 
