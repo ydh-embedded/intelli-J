@@ -36,20 +36,31 @@ public class Statistic {
             }
     }
 
-    public static void mGroupElements(){
+    public static void mGroupElements() {
         List<String> vNames = List.of("alice", "bob", "anton", "billy", "berta", "charlie");
         Map<Character, List<String>> vNamesByChar = new TreeMap<>();
-            for (String name : vNames){
-                char key = name.length() > 0 ? name.charAt(0) : ' ' ;
-                List<String> value = vNamesByChar.getOrDefault(key, new ArrayList<>());
-                    value.addLast(name);
-                    vNamesByChar.put(key,value);
-            }
-                System.out.println("vNamesByChar");
+        List<String> value;
+        for (String name : vNames) {
+//          char key = name.length() > 0 ? name.charAt(0) : ' ';
+            char key = !name.isEmpty() ? name.charAt(0) : ' ';
+            value = vNamesByChar.getOrDefault(key, new ArrayList<>());
+            value.addLast(name);
 
-            vNamesByChar.compute('a' , (key, value) -> { value.addLast("test");
+            System.out.println("vNamesByChar");
+        }
+
+//      vNamesByChar.compute('a', (key, value) -> {
+        vNamesByChar.computeIfPresent('a', (key, value) -> {
+            value.addLast("test");
             return value;
-            });
+        });
+
+        //Berechne für alle Values die Keys neu
+        vNamesByChar.replaceAll((key, value) -> {
+            value.addFirst("added");
+            return value;
+        });
+
 
 
     }
