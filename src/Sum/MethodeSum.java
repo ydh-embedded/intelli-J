@@ -1,8 +1,10 @@
+package Sum;
+
 public class MethodeSum {
 
     public static void main(String[] args) {
         try {
-            System.out.printf("HelloWorld of Intelli-Jay\n");
+            System.out.printf("HelloWorld.HelloWorld of Intelli-Jay\n");
             int result = sum(1, 2, 3, 4, 5);
             System.out.println("The sum is: " + result);
             System.exit(5);

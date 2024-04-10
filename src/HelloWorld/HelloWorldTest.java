@@ -1,6 +1,6 @@
-import static org.junit.jupiter.api.Assertions.*;
+package HelloWorld;
 
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 class HelloWorldTest {
 
@@ -14,5 +14,5 @@ class HelloWorldTest {
         assertEquals(5, HelloWorld.sum(2, 3));
     }
 
-    
+
 }

@@ -1,3 +1,6 @@
+package Sum;
+
+import HelloWorld.HelloWorld;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -12,7 +15,7 @@ class MethodeSumTest {
         assertEquals(3, HelloWorld.sum(2, 1));
         assertEquals(4, HelloWorld.sum(1, 3));
         assertEquals(5, HelloWorld.sum(2, 3));
-        //assertEquals(6, HelloWorld.sum(2, 3));
+        //assertEquals(6, HelloWorld.HelloWorld.sum(2, 3));
 
         //assertInstanceOf(sum());
     }
