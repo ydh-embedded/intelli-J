@@ -13,7 +13,7 @@ in der Zweite-Spalte steht das value
  */
 public class cMAP {
 
-    public static Map<String, Employee> mapEmployeeById = new HashMap<>(Map.of(
+    public static Map<String, Employee> employeeById = new HashMap<>(Map.of(
             "A001" , new Employee("Alice" , "A001" , "Sales"),
             "A002" , new Employee("Abe" , "A002" , "Sales"),
             "A003" , new Employee("Abbey" , "A003" , "Sales"),
@@ -30,8 +30,8 @@ public class cMAP {
     public static void mCreateHashMaps(String id , String department){
 
 
-        mapEmployeeById.put("EM001" , new Employee("ElonM" , "EM001" , "CEO"));
-        System.out.println(mapEmployeeById);
+        employeeById.put("EM001" , new Employee("ElonM" , "EM001" , "CEO"));
+        System.out.println(employeeById);
 
 
     }
@@ -55,8 +55,8 @@ public class cMAP {
 
 
 
-        mapEmployeeById.remove("EM001");
-        System.out.println(mapEmployeeById);
+        employeeById.remove("EM001");
+        System.out.println(employeeById);
 
 
     }
