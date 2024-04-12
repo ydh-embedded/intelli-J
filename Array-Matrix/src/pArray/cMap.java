@@ -1,2 +1,4 @@
-package pArray;public class cMap {
+package pArray;
+
+public class cMap {
 }
